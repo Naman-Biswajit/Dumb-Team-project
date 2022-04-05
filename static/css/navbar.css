@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Gafata&family=Rubik+Moonrocks&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+}
+
+nav ul li a {
+    padding: 10 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'Gafata', sans-serif;
+    background-color: blueviolet;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background: red;
+    padding: 15px 20px;
+}
+
+.logo {
+    padding: 0 40px;
+    background-color: green;
+    font-size: 40px;
+    color: aliceblue;
+    font-family: 'Rubik Moonrocks', cursive;
+}
