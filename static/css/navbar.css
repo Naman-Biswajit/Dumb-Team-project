@@ -11,7 +11,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: black;
+    background: #1c1b29;
 }
 
 nav ul li a {
@@ -34,8 +34,8 @@ nav ul {
     padding: 5px;
     font-size: 40px;
     font-family: 'Rubik Moonrocks', cursive;
-    border: solid 3px;
-    border-radius: 10px;
+    /* border: solid 3px yellow;
+    border-radius: 10px; */
 }
 
 #logo {
