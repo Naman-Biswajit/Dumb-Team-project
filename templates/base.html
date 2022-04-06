@@ -1,27 +1,42 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <script src="https://kit.fontawesome.com/adc3284d6c.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="/static/css/navbar.css">
+    <script src="/static/js/navbar.js"></script>
+
+    <!-- AUTORELOADER | TO BE DELETED LATER ON -->
+
     {% block head%}
     {% endblock %}
+
 </head>
+
 <body>
     <nav>
         <div><a href="/">WhiteBiscuit</a></div>
-        <ul>
-            <li><a class="{{explore}}"href="/">Explore</a></li>
-            <li><a class="{{simulations}}"href="/">Simulations</a></li>
-            <li><a class="{{learn}}"href="/">Learn</a></li>
-            <li><a class="{{about}}"href="/">About</a></li>
+        
+        <button id="bars">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <ul id="navbar-ul">
+            <li><a class="{{explore}}" href="/">Explore</a></li>
+            <li><a class="{{simulations}}" href="/">Simulations</a></li>
+            <li><a class="{{learn}}" href="/">Learn</a></li>
+            <li><a class="{{about}}" href="/">About</a></li>
         </ul>
     </nav>
-    
-    <script type="text/javascript" src="https://livejs.com/live.js"></script>
-    <!-- AUTORELOADER | TO BE DELETED LATER ON -->
+
     {% block body%}
     {% endblock %}
 
 </body>
+
 </html>

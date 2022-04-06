@@ -45,14 +45,65 @@ nav div a {
     text-decoration: none;
     color: white;
     border-radius: 1vh;
-    background: linear-gradient(-45deg, #ee7752,  #23d5ab);
+    background: linear-gradient(-45deg, #ee7752, #23d5ab);
 }
 
-nav ul li a:hover, .active {
+nav ul li a:hover,
+.active {
     transition-timing-function: ease-in;
     transition: 0.5s;
     color: #5e9eb6;
     border-radius: 1vh;
     border: 0.6vh solid;
     border-color: #23d5ab;
+}
+
+#bars {
+    background: transparent;
+    color: white;
+    font-size: 4.5vh;
+    margin: 2.5vh;
+    cursor: pointer;
+    border: none;
+    display: none;
+}
+
+@media screen and (min-height: 1000px) {
+    @media screen and (max-width: 1700px) {
+        nav {
+            flex-wrap: wrap;
+        }
+
+        nav div {
+            justify-self: center;
+        }
+
+        nav ul {
+            margin: 0 0;
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: #1c1b29;
+        }
+        
+        nav ul li {
+            margin: 1em 0;
+        }
+
+        nav ul li a {
+            display: block;
+            margin: auto;
+            border-radius: 0.3em;
+            border: 0.2em solid rgb(144, 134, 228);
+        }
+        
+        #navbar-ul.show {
+            display: flex;
+        }
+
+        #bars {
+            display: block;
+        }
+    }
+
 }
