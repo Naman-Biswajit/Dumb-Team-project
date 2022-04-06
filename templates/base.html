@@ -9,16 +9,19 @@
 </head>
 <body>
     <nav>
-        <div class="logo"><a href="/" id="logo">WhiteBiscuit</a></div>
+        <div><a href="/">WhiteBiscuit</a></div>
         <ul>
-            <li><a href="/">Explore</a></li>
-            <li><a href="/">Simulations</a></li>
-            <li><a href="/">Learn</a></li>
-            <li><a href="/">About</a></li>
+            <li><a class="{{explore}}"href="/">Explore</a></li>
+            <li><a class="{{simulations}}"href="/">Simulations</a></li>
+            <li><a class="{{learn}}"href="/">Learn</a></li>
+            <li><a class="{{about}}"href="/">About</a></li>
         </ul>
     </nav>
-
+    
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <!-- AUTORELOADER | TO BE DELETED LATER ON -->
     {% block body%}
     {% endblock %}
+
 </body>
 </html>
