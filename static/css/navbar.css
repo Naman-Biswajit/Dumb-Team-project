@@ -106,9 +106,9 @@ nav ul li a:hover,
     }
 
     @media screen and (max-width: 490px) {
-        body {
-            background: red;
-        }
+        /* body { */
+            /* background: red; */
+        /* } */
 
         nav div {
             font-size: 9vw;
