@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Ubuntu&display=swap');
+
+
+:root {
+    --dark-purple: #18161d;
+    --inner-purple: #1f1a24;
+    --glow: #23c9d5;
+    --ubuntu: 'Ubuntu', sans-serif;
+    --nova-round: 'Nova Round', cursive;
+    
+}
+
+body {
+    background: var(--dark-purple);
+    font-family: var(--ubuntu);
+}
+
+#content {
+    position: relative;
+    margin: 17vh 3vw;
+    color: white;;
+    background: var(--inner-purple);
+    border: var(--glow) solid 2px;
+    box-shadow: var(--glow) 0 0 15px;
+    padding: 3vh 3vw;
+}
+
+.common-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    font-family: var(--nova-round);
+    font-size: larger;
+    display: flex;
+    margin: 0 0 5vh 0;
+}
+
+.content-container {
+    margin: 2vh 1vw;
+}
+
+.sub-container {
+    background: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.image-container {
+    background: blue;
+    padding: 10px;
+}
+
+.image-container img {
+    width: 30vw;
+    background: red;
+    padding: 1vh;
+}
+
+.text-container {
+    font-size: 1.3em;
+    background: lightcoral;
+    padding: 7vh;
+    align-self: center;
+    margin: auto;
+    max-width: 53vw;
+}
+
+.text-header {
+    font-size: 1.5em;
+    margin-bottom: 1.3em;
+}
+
+.text-body {
+    font-size: 1.1em;
+    margin-bottom: 1.3em;
+    padding: 1vh 0;
+}
+
+.btn {
+    padding: 1vh 1vw;
+    font-size: 1.3em;
+    border-radius: 0.2em;
+    border-style: dashed;
+}

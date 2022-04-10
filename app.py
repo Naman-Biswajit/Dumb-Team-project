@@ -10,7 +10,7 @@ def login():
 
 @app.route('/explore')
 def index():
-    return render_template('index.html', explore="active")
+    return render_template('explore.html', explore="active")
 
 @app.errorhandler(404)
 def page_not_found(e):
