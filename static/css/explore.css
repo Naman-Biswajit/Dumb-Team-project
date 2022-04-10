@@ -2,8 +2,10 @@
 
 
 :root {
-    --dark-purple: #18161d;
-    --inner-purple: #1f1a24;
+    --outer: #2e353f;
+    --inner: #363b59;
+    --btn-bg: #f06a73;
+    --light-grey: #3e4363;
     --glow: #23c9d5;
     --ubuntu: 'Ubuntu', sans-serif;
     --nova-round: 'Nova Round', cursive;
@@ -11,7 +13,7 @@
 }
 
 body {
-    background: var(--dark-purple);
+    background: var(--outer);
     font-family: var(--ubuntu);
 }
 
@@ -19,7 +21,7 @@ body {
     position: relative;
     margin: 17vh 3vw;
     color: white;;
-    background: var(--inner-purple);
+    background: var(--inner);
     border: var(--glow) solid 2px;
     box-shadow: var(--glow) 0 0 15px;
     padding: 3vh 3vw;
@@ -42,16 +44,14 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 2vh 1vw;
-    /* background: blueviolet; */
 }
 
 .sub-container {
-    background: green;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     max-width: fit-content;
-    padding: 10px 0;
+    padding: 27px 0;
 }
 
 .image-container {
@@ -68,11 +68,13 @@ body {
 
 .text-container {
     font-size: 1.3em;
-    background: lightcoral;
     padding: 7vh;
     align-self: center;
     margin: auto;
     max-width: 53vw;
+    background: var(--light-grey);
+    border-radius: 10px;
+    box-shadow: #4b5e95 2vh 2vh 0 0;   
 }
 
 .text-header {
@@ -89,6 +91,8 @@ body {
 .btn {
     padding: 1vh 1vw;
     font-size: 1.3em;
-    border-radius: 0.2em;
-    border-style: dashed;
+    border: none;
+    border-radius: 0.7em;
+    background: var(--btn-bg);
+    color: white;
 }
