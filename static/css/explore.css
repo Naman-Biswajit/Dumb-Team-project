@@ -32,13 +32,17 @@ body {
 
 .header {
     font-family: var(--nova-round);
-    font-size: larger;
+    font-size: xx-large;
     display: flex;
-    margin: 0 0 5vh 0;
+    margin: 5vh 0;
 }
 
 .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 2vh 1vw;
+    /* background: blueviolet; */
 }
 
 .sub-container {
@@ -46,17 +50,20 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    max-width: fit-content;
+    padding: 10px 0;
 }
 
 .image-container {
-    background: blue;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image-container img {
-    width: 30vw;
-    background: red;
-    padding: 1vh;
+    width: 35vhw;
+    height: 56vh;
+    padding: 0 10px
 }
 
 .text-container {
