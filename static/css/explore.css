@@ -95,4 +95,12 @@ body {
     border-radius: 0.7em;
     background: var(--btn-bg);
     color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: var(--glow);
+    color: white;
+    transition-timing-function: ease-in;
+    transition: .5s;
 }
