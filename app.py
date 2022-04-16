@@ -12,6 +12,10 @@ def login():
 def index():
     return render_template('explore.html', explore="active")
 
+@app.route('/planner')
+def planner():
+    return render_template('planner.html', explore="active")
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html')

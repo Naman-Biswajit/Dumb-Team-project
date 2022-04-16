@@ -1,132 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik+Moonrocks&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik+Moonrocks&display=swap");
+
+:root {
+  --nav-bg: #2a283d;
+  --anchor-color: white;
+  --active-border: #23d5cc;
+  --fade-left: #ee7752;
+  --fade-right:#792dc5;
+  --active: #5e9eb6;
+  --logo-font: "Rubik Moonrocks", cursive;
+  --anchor-font: "Fredoka One", cursive;
+  --after-border: rgb(144, 134, 228);
+}
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 nav {
-    z-index: 1;
-    position: fixed;
-    width: 100%;
-    height: 11vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #2a283d;
-    top: 0;
-    /* filter: brightness(150%); */
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--nav-bg);
+  top: 0;
+  /* filter: brightness(150%); */
 }
 
 nav ul li a {
-    padding: 1.5vh 2vh;
-    text-decoration: none;
-    color: white;
-    font-size: 3.5vh;
-    font-family: 'Fredoka One', cursive;
-    border: 0.6vh solid transparent;
-    margin: 0 1.3vh;
+  padding: 1.5vh 2vh;
+  text-decoration: none;
+  color: white;
+  font-size: 3.5vh;
+  font-family: var(--anchor-font);
+  border: 0.6vh solid transparent;
+  margin: 0 1.3vh;
 }
 
 #navbar-ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 1.5vh 2.5vh;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 1.5vh 2.5vh;
 }
 
 nav div {
-    padding: 2vh;
-    font-size: 5.8vh;
-    font-family: 'Rubik Moonrocks', cursive;
+  padding: 2vh;
+  font-size: 5.8vh;
+  font-family: var(--logo-font);
 }
 
 nav div a {
-    padding: 0.2vh 0.7vh;
-    text-decoration: none;
-    color: white;
-    border-radius: 1vh;
-    background: linear-gradient(-45deg, #ee7752, #792dc5);
+  padding: 0.2vh 0.7vh;
+  text-decoration: none;
+  color: var(--anchor-color);
+  border-radius: 1vh;
+  background: linear-gradient(-45deg, var(--fade-left), var(--fade-right));
 }
 
 nav ul li a:hover,
 .active {
-    transition-timing-function: ease-in;
-    transition: 0.5s;
-    color: #5e9eb6;
-    border-radius: 1vh;
-    border: 0.6vh solid;
-    border-color: #23d5cc;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+  color: var(--active);
+  border-radius: 1vh;
+  border: 0.6vh solid;
+  border-color: var(--active-border);
 }
 
 #bars {
-    background: transparent;
-    color: white;
-    font-size: 4.5vh;
-    margin: 2.5vh;
-    cursor: pointer;
-    border: none;
-    display: none;
+  background: transparent;
+  color: white;
+  font-size: 4.5vh;
+  margin: 2.5vh;
+  cursor: pointer;
+  border: none;
+  display: none;
 }
 
 @media screen and (max-width: 700px),
-(max-width: 1024px) and (min-width: 700px), (min-height: 750px) and (max-width: 1200px),
-(min-height: 1000px) and (max-width: 1400px) {
-    nav {
-        flex-wrap: wrap;
-    }
+  (max-width: 1024px) and (min-width: 700px),
+  (min-height: 750px) and (max-width: 1200px),
+  (min-height: 1000px) and (max-width: 1400px) {
+  nav {
+    flex-wrap: wrap;
+  }
 
+  nav div {
+    justify-self: center;
+  }
+
+  #navbar-ul {
+    margin: 0 0;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: inherit;
+  }
+
+  nav ul li {
+    margin: 0.5em 0;
+  }
+
+  nav ul li a {
+    display: block;
+    margin: auto;
+    border-radius: 0.3em;
+    border: 0.2em solid var(--after-border);
+  }
+
+  #navbar-ul.show {
+    display: flex;
+  }
+
+  #bars {
+    display: block;
+  }
+
+  @media screen and (max-width: 490px) {
     nav div {
-        justify-self: center;
+      font-size: 9vw;
+      margin: 0 1vw;
+      padding: 0 4vw;
     }
 
-    #navbar-ul {
-        margin: 0 0;
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: inherit;
+    #bars {
+      font-size: 7vw;
     }
 
     nav ul li {
-        margin: 0.5em 0;
+      margin: 0.8vh 0;
     }
 
     nav ul li a {
-        display: block;
-        margin: auto;
-        border-radius: 0.3em;
-        border: 0.2em solid rgb(144, 134, 228);
+      margin: 0.314vw;
+      font-size: 1.7em;
+      border: 1vw solid var(--after-border);
     }
-
-    #navbar-ul.show {
-        display: flex;
-    }
-    
-    #bars {
-        display: block;
-    }
-
-    @media screen and (max-width: 490px) {
-        nav div {
-            font-size: 9vw;
-            margin: 0 1vw;
-            padding: 0 4vw;
-        }
-
-        #bars {
-            font-size: 7vw;
-        }
-
-        nav ul li {
-            margin: 0.8vh 0;
-        }
-
-        nav ul li a {
-            margin: 0.314vw;
-            font-size: 1.7em;
-            border: 1vw solid rgb(144, 134, 228); 
-        }
-    }
+  }
 }
