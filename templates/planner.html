@@ -5,52 +5,53 @@
 {% endblock %}
 
 {% block body %}
-<section class="super-container col">
+<section class="super-container">
     <div class="main-container">
-        <div class="main-content">
-            <div class="content-container">
-                <div class="content-header">
-                    <h2>Add a new task</h2>
-                </div>
-                <div class="content-body">
-                    <form action="/planner/add" method="POST">
-                        <div class="form-group col">
-                            <label for="task-name">Name</label>
-                            <input type="text" name="task-name" id="task-name" class="form-control" placeholder="Enter task name">
-                        </div>
-                        <div class="form-group col">
-                            <label for="task-description">Description</label>
-                            <textarea maxlenght="100" name="task-description" id="task-description" class="form-control" placeholder="Enter task description"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="task-date">Date</label>
-                            <input type="date" name="task-date" id="task-date" class="form-control select">
-                        </div>
-                        <div class="form-group">
-                            <label for="task-time">Time</label>
-                            <input type="time" name="task-time" id="task-time" class="form-control select">
-                        </div>
-                        <div class="form-group">
-                            <label for="task-priority">Priority</label>
-                            <select name="task-priority" id="task-priority" class="form-control select">
-                                <option value="1">Low</option>
-                                <option value="2">Medium</option>
-                                <option value="3">High</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="task-status">Status</label>
-                            <select name="task-status" id="task-status" class="form-control select">
-                                <option value="1">Not started</option>
-                                <option value="2">In progress</option>
-                                <option value="3">Completed</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" value="Add task" id="add-task">
-                        </div>
-                    </form>
-                </div>
+        <div class="task-container">
+            yeet
+        </div>
+        <div class="content-container">
+            <div class="content-header">
+                <h2>Add a new task</h2>
+            </div>
+            <div class="content-body">
+                <form action="/planner/add" method="POST">
+                    <div class="form-group col">
+                        <label for="task-name">Name</label>
+                        <input type="text" name="task-name" id="task-name" class="form-control" placeholder="Enter task name">
+                    </div>
+                    <div class="form-group col">
+                        <label for="task-description">Description</label>
+                        <textarea maxlenght="100" name="task-description" id="task-description" class="form-control" placeholder="Enter task description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-date">Date</label>
+                        <input type="date" name="task-date" id="task-date" class="form-control select">
+                    </div>
+                    <div class="form-group">
+                        <label for="task-time">Time</label>
+                        <input type="time" name="task-time" id="task-time" class="form-control select">
+                    </div>
+                    <div class="form-group">
+                        <label for="task-priority">Priority</label>
+                        <select name="task-priority" id="task-priority" class="form-control select">
+                            <option value="1">Low</option>
+                            <option value="2">Medium</option>
+                            <option value="3">High</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-status">Status</label>
+                        <select name="task-status" id="task-status" class="form-control select">
+                            <option value="1">Not started</option>
+                            <option value="2">In progress</option>
+                            <option value="3">Completed</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Add task" id="add-task">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
