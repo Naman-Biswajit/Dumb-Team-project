@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Round&family=Ubuntu&display=swap");
 
 :root {
-  --outer: #2e353f;
+  --bg: #2e353f;
   --inner: #363b59;
   --btn-bg: #f06a73;
   --light-grey: #3e4363;
   --glow: #23c9d5;
   --shadow: #4b5e95;
-  --ubuntu: "Ubuntu", sans-serif;
+  --text-font: "Ubuntu", sans-serif;
   --nova-round: "Nova Round", cursive;
 }
 
 body {
-  background: var(--outer);
-  font-family: var(--ubuntu);
+  background: var(--bg);
+  font-family: var(--text-font);
 }
 
 #content {
