@@ -6,7 +6,8 @@ app = Flask(__name__, template_folder='templates')
 
 @app.route('/')
 def login():
-    return redirect('/explore')
+    # return redirect('/explore')
+    return render_template('login.html')
 
 
 @app.route('/explore')
