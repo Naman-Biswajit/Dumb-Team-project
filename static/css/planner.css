@@ -1,69 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
 :root {
-  --bg: #363b59;
-  --inner: #2e353f;
-  --text-font: "Ubuntu Mono", monospace;
-	--special: 'Kanit', sans-serif;
-  --shadow: #00000080;
-	--gradient-left: indianred; 
+	--bg: #363b59;
+	--inner: #2e353f;
+	--text-font: "Ubuntu Mono", monospace;
+	--special: "Kanit", sans-serif;
+	--shadow: #00000080;
+	--gradient-left: indianred;
 	--gradient-right: teal;
 }
 
 body {
-  background: var(--bg);
-  color: white;
-  font-family: var(--text-font);
+	background: var(--bg);
+	color: white;
+	font-family: var(--text-font);
 }
 
 .super-container {
-	margin: 100px;
+	margin: 13vh;
 }
 
 .main-container {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-}
-
-.task-container {
-	background: red;
-}
-.content-container {
-	background: var(--inner);
-  padding: 3vh 3vw;
-  border-radius: 10px;
-  box-shadow: var(--shadow) 0 0 15px;
+	align-items: flex-start;
 }
 
 .content-header {
-  font-family: var(--text-font);
-  font-size: 1em;
-  margin: 0.7em 0;
+	font-family: var(--text-font);
+	font-size: 1em;
+	margin: 0.7em 0;
 }
 
 .content-body {
-  font-size: 1.3rem;
-  margin: 2rem auto;
-  font-family: var(--text-font);
+	border-radius: 10px;
+	padding: 3vh 3vw;
+	background: var(--inner);
+	box-shadow: var(--shadow) 0 0 15px;
+	font-size: 1.3rem;
+	font-family: var(--text-font);
+	max-width: 25vw;
+	max-height: 80vh;
 }
 
 .form-group {
-  display: flex;
-  justify-content: space-between;
-  margin: 0.7rem 0;
+	display: flex;
+	justify-content: space-between;
+	margin: 0.7rem 0;
 }
 
-
 .col {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .form-control {
-  background: var(--dark-grey);
-  border: none;
-  color: gold;
+	background: var(--dark-grey);
+	border: none;
+	color: gold;
 	font-size: 1.3rem;
 	outline: none;
 }
@@ -72,16 +66,14 @@ body {
 	width: 100%;
 	resize: none;
 	font-family: var(--text-font);
-	background: var(--inner);
-}
-
-.select {
-	color-scheme: dark light;
+	height: 10vh;
 }
 
 #add-task {
 	color: white;
-	background: linear-gradient(to right, var(--gradient-left), var(--gradient-right));
+	background: linear-gradient(to right,
+			var(--gradient-left),
+			var(--gradient-right));
 	border: 3px transparent;
 	border-radius: 0.5rem;
 	font-weight: bold;
@@ -89,11 +81,60 @@ body {
 	padding: 0.5rem;
 	border: none;
 	opacity: 0.8;
-  transition: 0.2s ease-in-out, padding 0.3s linear;
+	transition: 0.2s ease-in-out, padding 0.3s linear;
 }
 
 #add-task:hover {
 	cursor: pointer;
 	opacity: 1;
-  transition: 0.2s ease-in-out, padding 0.3s linear;
+	transition: 0.2s ease-in-out, padding 0.3s linear;
+}
+
+option {
+	background: var(--inner);
+}
+
+.task-container {
+	background: var(--inner);
+	box-shadow: var(--shadow) 0 0 15px;
+	height: 80vh;
+	width: 62vw;
+}
+
+.task-header {
+	margin: 5vh 5vw;
+}
+
+.table-row {
+	 display: flex; 
+	justify-content: space-between; 
+}
+
+#task-list {
+	font-size: 1.2rem;
+	overflow: scroll;
+}
+
+th, td {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 10vw;
+	height: 5vh;
+	margin: 1vh 0.7vw;
+}
+
+th {
+	background: green;
+}
+
+td {
+	background: blue
+}
+
+#delete {
+	padding: 1vh 1vw;
+	color: white;
+	background: indianred;
+	text-decoration: none;
 }
