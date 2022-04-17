@@ -9,8 +9,36 @@
     <link rel="stylesheet" href="/static/css/scrollbar.css">
 </head>
 <body>
-    <div id="super-container">
-        
-    </div>
+    <section id="super-container">
+        <div class="login">
+            <div class="login-container">
+                <div class="login-header">
+                    <div class="login-logo">
+                        <img src="/static/img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="login-body">
+                    <div class="login-form">
+                        <div class="login-form-header">
+                            <h1>Login</h1>
+                        </div>
+                        <div class="login-form-body">
+                            <form action="/login" method="post">
+                                <div class="login-form-input">
+                                    <input type="text" name="username" placeholder="Username">
+                                </div>
+                                <div class="login-form-input">
+                                    <input type="password" name="password" placeholder="Password">
+                                </div>
+                                <div class="login-form-input">
+                                    <input type="submit" value="Login">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

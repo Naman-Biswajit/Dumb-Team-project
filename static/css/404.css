@@ -9,7 +9,7 @@
   --linear-gradient-1: #0091ff;
   --linear-gradient-2: #f6285f;
   --linear-gradient-3: #f6ff00;
-  --shadow: steelblue;
+  --shadow: none;
 }
 body {
   font-family: "Roboto", sans-serif;

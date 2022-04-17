@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&family=Roboto&display=swap');
+
 :root {
-    --linear-gradient-1: #f65e4dc9;
-    --linear-gradient-2: #576fc8;
-    --linear-gradient-3: #3cb0b4;
-    --linear-gradient-4: #6b32f0;
+    --text-mono: 'Noto Sans Mono', monospace;
+    --text-font: 'Roboto', sans-serif;
+    --dark: #182b46;
+    --card: #10243d;
 }
 
 * {
@@ -10,43 +12,29 @@
     padding: 0;
 }
 
+body {
+    background: url('/static/svg/Live-Motion-Background.svg') center center fixed;
+    background-size: cover;
+    font-family: var(--text-font);
+    color: white;
+}
+body:hover {
+}
 #super-container {
-    width: 100%;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    background: linear-gradient(10deg,
-            var(--linear-gradient-1) 25%,
-            var(--linear-gradient-2) 50%,
-            var(--linear-gradient-3) 75%,
-            var(--linear-gradient-4) 100%);
-    background-size: 400% 400%;
-    -webkit-animation: bg-animation 25s ease-in-out infinite;
-    animation: bg-animation 25s ease-in-out infinite;
+    width: 100%;
+    z-index: 1;
 }
 
-@-webkit-keyframes bg-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 50% 0;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-@keyframes bg-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    30% {
-        background-position: 50% 0%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+.login {
+    font-size: 3rem;
+    background: var(--card);
+    box-shadow: var(--dark) 0px 0px 10px;
+    border-radius: 10px;
+    padding: 20vh 7vw;
 }
