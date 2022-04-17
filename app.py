@@ -18,7 +18,10 @@ def index():
 def planner():
     return render_template('planner.html', explore="active")
 
-
+@app.route('/learn')
+def learn():
+    return render_template('learn.html', explore="active")
+    
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html')
