@@ -13,6 +13,7 @@
 	--list-text-colour: #ffffff;
 	--header-colour: steelblue;
 	--delete-colour: #F5F5F5;
+	--control-colour: gold;
 }
 
 body {
@@ -62,7 +63,7 @@ body {
 .form-control {
 	background: var(--dark-grey);
 	border: none;
-	color: gold;
+	color: var(--control-colour);
 	font-size: 1.3rem;
 	outline: none;
 }

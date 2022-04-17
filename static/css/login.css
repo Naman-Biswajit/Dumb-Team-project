@@ -18,8 +18,7 @@ body {
     font-family: var(--text-font);
     color: white;
 }
-body:hover {
-}
+
 #super-container {
     cursor: default;
     display: flex;
@@ -32,9 +31,63 @@ body:hover {
 }
 
 .login {
-    font-size: 3rem;
+    font-size: 2rem;
     background: var(--card);
     box-shadow: var(--dark) 0px 0px 10px;
     border-radius: 10px;
-    padding: 20vh 7vw;
+    padding: 2vh 2vw;
+    height: 40vh;
+    width: 20vw;
+}
+
+.input {
+    outline: none;
+    color: gold;
+    background: transparent;
+    border: none;
+    color-scheme: light dark;
+    font-size: 1.2rem;
+}
+
+.text-field {
+    border-bottom: 1px solid #f15b29;
+}
+
+.input::placeholder {
+    color: white;
+}
+
+.login-form-input {
+    padding: 1vh 0;
+}
+
+.submit {
+    background: #8dc73f;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 1vh 2vw;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.7;
+}
+
+.login-form-header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00adef;
+    margin: 5vh 0;
+}
+
+.login-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit:hover {
+    filter: brightness(110%);
+    opacity: 1
 }
