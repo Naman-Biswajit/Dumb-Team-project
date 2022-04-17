@@ -5,8 +5,15 @@
   padding: 0;
 }
 
+:root {
+  --linear-gradient-1: #0091ff;
+  --linear-gradient-2: #f6285f;
+  --linear-gradient-3: #f6ff00;
+  --shadow: #3d3d3daa;
+}
 body {
   font-family: "Roboto", sans-serif;
+  background: url('/static/gif/original.gif');
 }
 
 #main-container {
@@ -21,8 +28,8 @@ body {
 #number {
   font-family: "Roboto", sans-serif;
   font-size: 15vh;
-  background-image: linear-gradient(150deg, #0091ff, #f6285f, #f6ff00);
-  filter: drop-shadow(5px 5px #333);
+  background-image: linear-gradient(150deg, var(--linear-gradient-1), var(--linear-gradient-2), var(--linear-gradient-3));
+  filter: drop-shadow(5px 5px var(--shadow));
 
   background-size: 100%;
   background-clip: text;
@@ -34,6 +41,7 @@ body {
 }
 
 #text {
+  color: white;
   padding: 3vh;
   font-size: 6vh;
   font-weight: 350;

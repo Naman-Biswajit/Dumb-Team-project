@@ -95,14 +95,13 @@ body {
   background: var(--btn-bg);
   color: white;
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.3s ease-in-out;
 }
 
 .btn:hover {
   background: var(--glow);
   color: white;
-  transition-timing-function: ease-in;
-  transition: 0.5s;
+  transition: 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 900px) and (min-height: 830px),
