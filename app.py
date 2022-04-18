@@ -29,11 +29,9 @@ def login():
         logged_in = login_user(request.form['username'], request.form['password'])
 
         if type(logged_in) == str:
-            print(logged_in)
             return render_template('login.html', error=True, message=logged_in)
 
         else:
-            print(logged_in)
             return redirect('/explore')
 
 
