@@ -91,3 +91,8 @@ body {
     filter: brightness(110%);
     opacity: 1
 }
+
+.error {
+    color: crimson;
+    font-size: 1rem;
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Biscuit</title>
     <link rel="stylesheet" href="/static/css/login.css">
-    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <!-- <script type="text/javascript" src="https://livejs.com/live.js"></script> -->
 </head>
 <body>
     <section id="super-container">
@@ -32,6 +32,10 @@
                                 <div class="login-form-input">
                                     <input class="input submit" type="submit" value="Login">
                                 </div>
+                                {% if error %}
+                                    <div class="error" style="color: red;">This username already exists!</div>
+                                {% else %}
+                                {% endif %}
                             </form>
                         </div>
                     </div>
