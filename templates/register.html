@@ -22,7 +22,7 @@
                             <h1>Login</h1>
                         </div>
                         <div class="login-form-body">
-                            <form action="/login" method="post">
+                            <form action="/register" method="post">
                                 <div class="login-form-input">
                                     <input class="input text-field" type="text" name="username" placeholder="Username">
                                 </div>
@@ -30,8 +30,9 @@
                                     <input class="input text-field" type="password" name="password" placeholder="Password">
                                 </div>
                                 <div class="login-form-input">
-                                    <input class="input submit" type="submit" value="Login">
+                                    <input class="input submit" type="submit" value="Register">
                                 </div>
+
                                 {% if error %}
                                     <div class="error" style="color: red;">This username already exists!</div>
                                 {% else %}

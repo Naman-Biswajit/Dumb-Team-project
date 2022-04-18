@@ -19,10 +19,10 @@ users = main_db['users']
 
 @app.route('/')
 def index():
-    return redirect('/login')
+    return redirect('/register')
 
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/register', methods=['GET', 'POST'])
 def login():
     if request.method == "POST":
         username = request.form['username']
@@ -34,9 +34,9 @@ def login():
             return redirect('/explore')
         
         else: 
-            return render_template('login.html', error=True)
+            return render_template('register.html', error=True)
 
-    return render_template('login.html')
+    return render_template('register.html')
 
 
 @app.route('/explore')

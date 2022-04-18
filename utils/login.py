@@ -11,21 +11,18 @@ main_db = cluster['main']
 users = main_db['users']
 
 
-def insert_user(username, password):
+def insert_user(user_id, password):
     password = b'{password}'
-    username = b'{username}'
-    user_id = hash(username)
     password = hashlib.sha256(password).hexdigest()
 
-    print('finding users')
-    searched_users = users.find_one({'_id': str(user_id)})
-    print(searched_users)
+    searched_user = users.find_one({'_id': str(user_id)})
 
-    if searched_users is None:
-        print('inserting user')
-        users.insert_one(
-            {'_id': str(user_id), 'password': password})
-        print("User added")
+    if searched_user is None:
+        users.insert_one({'_id': str(user_id), 'password': password})
+        return True
+
+    elif not (searched_user['_id'] == str(user_id)):
+        users.insert_one({'_id': str(user_id), 'password': password})
         return True
 
     else:
